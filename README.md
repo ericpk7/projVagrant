@@ -1,6 +1,5 @@
 <h1 align="center">Projeto de Administração de Redes usando Vagrant com 3 VMs</h1>
-###### *Aluno: Eric Peterson Kassim Costa*
-
+<h6>Aluno: Eric Peterson Kassim Costa</h6>
 
 
 ## Descrição
@@ -26,7 +25,7 @@ O ambiente é composto por três VMs, cada uma com um papel específico:
    - **Endereço IP Público (DHCP)**
    - **Função:** Gateway de Rede
 
- ##VagrantFile
+## VagrantFile
 **VM1**
 ```
     # VM1 (SERVIDOR WEB)
@@ -109,7 +108,7 @@ Este arquivo de provisionamento é usado para configurar a VM3, que atua como um
 sudo sysctl net.ipv4.ip_forward=1
 sudo iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 ```
-##Configurações de Rede
+## Configurações de Rede
 
 ### Rede Privada (192.168.50.0/24)
 
